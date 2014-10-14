@@ -1,20 +1,24 @@
+<% for (var key in config.courses) 
+	{
+		if (key == page.category) 
+		{
+			var course = config.courses[key] %>
 <div class="container">
 	<div class="category--header row">
 		<div class="jumbotron">
-		  <h1><%=page.category%></h1>
-			<p>...</p>
+		  <h1><%= course.title %></h1>
+			<p><%= course.description %></p>
 			<p><a class="btn btn-primary btn-lg" role="button">Subscribe</a></p>
 		</div>
 	</div>
 
-	<% for (var key in config.courses) {
-		if (key == page.category) { 
-			var course = config.courses[key] %>
+	
 	<a href="http://form.com/<%= course.formId %>">Suscribe</a>
-	<% 	}
-	} %>
 
 	<div class="row">
 		<%- partial('_partial/archive', {pagination: config.category, index: true}) %>
 	</div>
 </div>
+<% 		}
+	}
+%>
