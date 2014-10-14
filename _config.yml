@@ -115,7 +115,7 @@ courses:
     title: Coolblue Blauwdruk
     description: "Voor iedereen die werkt met het merk Coolblue. Dat ben jij ook!"
     image: coolblueblueprint.png
-    url: "http://s.sites.google.com"
+    url: "https://sites.google.com/a/coolblue.nl/blueprint"
   writing-course:
     title: Wervend schrijven
     description: "Bij wervende teksten wil je één reactie niet: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven."
@@ -137,17 +137,14 @@ courses:
     title: User Experience Design at Coolblue
     description: On these pages you can find any information you need about the User Experience Design at Coolblue.
     image: uxatcoolblue.png
-    startDate: "2014-11-7"
-    formId: "ABC123"
+    url: "https://sites.google.com/a/coolblue.nl/ux"
   codecademy:
     title: Codecademy
     description: "Learn to code HTML, CSS, Javascript and PHP"
     image: codecademy.png
-    startDate: "2014-11-7"
-    formId: "ABC123"
+    url: "http://www.codecademy.com/"
   codeschool:
     title: Code school
     description: "Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js."
     image: codeschool.png
-    startDate: "2014-11-7"
-    formId: "ABC123"
+    url: "http://www.codeschool.com/"
