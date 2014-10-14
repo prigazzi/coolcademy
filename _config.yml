@@ -17,7 +17,7 @@ root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
-category_dir: categories
+category_dir: courses
 code_dir: downloads/code
 
 # Directory
