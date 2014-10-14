@@ -137,17 +137,17 @@ courses:
     title: User Experience Design at Coolblue
     description: On these pages you can find any information you need about the User Experience Design at Coolblue.
     image: uxatcoolblue.png
-    startDate: "2014-11-7"
+    startDate: "2014-11-07"
     formId: "ABC123"
   codecademy:
     title: Codecademy
     description: "Learn to code HTML, CSS, Javascript and PHP"
     image: codecademy.png
-    startDate: "2014-11-7"
+    startDate: "2014-11-07"
     formId: "ABC123"
   codeschool:
     title: Code school
     description: "Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js."
     image: codeschool.png
-    startDate: "2014-11-7"
+    startDate: "2014-11-07"
     formId: "ABC123"

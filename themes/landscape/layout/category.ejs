@@ -8,7 +8,12 @@
 		<div class="jumbotron">
 		  <h1><%= course.title %></h1>
 			<p><%= course.description %></p>
-			<p><a target="_new" class="btn btn-primary btn-lg" role="button" href="https://docs.google.com/a/coolblue.nl/forms/d/1Cn5gP0-3s70O3Ly5i_BzRdhnrS0ISHaGlK51pdVxmnE/viewform?entry.760763918=<%=course.startDate%>&entry.1313137544=<%=course.title%>&entry.1136998327=<%=course.formId%>">Subscribe</a></p>
+			<% if (typeof course.startDate !== 'undefined') {%>
+				<p>
+					<a target="_new" class="btn btn-primary btn-lg" role="button"
+					href="https://docs.google.com/a/coolblue.nl/forms/d/1Cn5gP0-3s70O3Ly5i_BzRdhnrS0ISHaGlK51pdVxmnE/viewform?entry.760763918=<%=course.startDate%>&entry.1313137544=<%=course.title%>&entry.1136998327=<%=course.formId%>">Subscribe</a>
+				</p>
+			<% } %>
 		</div>
 	</div>
 	<div class="row">
