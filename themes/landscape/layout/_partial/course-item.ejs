@@ -11,9 +11,16 @@
 				<a href="/<%=config.category_dir%>/<%=slug%>/"><%=title%></a>
 			</h3>
 			<div class="course-item--description">
-				<p><%- truncate(description, 50) %></p>
+				<p>
+				<% var maxlength = theme.description_length;
+					var max = description.length > maxlength ? maxlength : description.length %>
+				<%- description.substr(0, max) %>
+				<%- description.length > maxlength ? "..." : "" %>
+				</p>
+				<div class="course-item--details">
+					<span class="badge">EN</span>
+				</div>
 			</div>
-		</div>
 		</div>
 	</div>
 </div>
