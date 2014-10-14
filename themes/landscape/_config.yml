@@ -4,6 +4,9 @@ menu:
   Archives: /archives
 rss: /atom.xml
 
+#Index
+description_length: 100
+
 # Content
 excerpt_link: Read More
 fancybox: true
