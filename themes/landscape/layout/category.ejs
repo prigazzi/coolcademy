@@ -25,8 +25,17 @@
 		</div>
 	</div>
 	<div class="row">
-		<% var lesson = 1 %>
-		<%- partial('_partial/archive', {pagination: config.category, index: true, lesson: lesson}) %>
-		<% lesson++ %>
+		<div class="col-xs-12">
+			<h3>Contents</h3>
+			<div class="panel panel-default">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<% var lesson = 1 %>
+						<%- partial('_partial/archive', {pagination: config.category, index: true, lesson: lesson}) %>
+						<% lesson++ %>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
