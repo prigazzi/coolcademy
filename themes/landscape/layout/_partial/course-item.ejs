@@ -8,7 +8,7 @@
 			<a href="/<%=config.category_dir%>/<%=slug%>/"><%=title%></a>
 		</h2>
 		<div class="course-item--description">
-			<p><%=description%></p>
+			<p><%- truncate(description, 50) %></p>
 			<div class="course-item--details">
 				<span class="badge">EN</span>
 			</div>

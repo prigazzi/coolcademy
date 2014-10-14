@@ -1,38 +1,8 @@
-#header
-  background-color: color-blue
-  position: relative
+.navbar
+  background: color-blue
   height: header-height
   border-bottom: 1px solid color-border
   overflow: hidden
-  &:before, &:after
-    content: ""
-    position: absolute
-    left: 0
-    right: 0
-    height: header-height
-  &:before
-    top: 0
-    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent)
-  &:after
-    bottom: 0
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
-
-#header-outer
-  height: 100%
-  position: relative
-  z-index: 1
-
-#header-inner
-  position: relative
-  overflow: hidden
-
-#header-title
-  text-align: center
-  height: logo-size
-  position: absolute
-  top: 50%
-  left: 0
-  margin-top: logo-size * -0.5
 
 $logo-text
   text-decoration: none
