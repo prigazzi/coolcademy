@@ -109,7 +109,7 @@ courses:
     title: Coolblue Introduction
     description: "During this day you learn more about the why, who en how of Coolblue."
     image: "coolblueintro.png"
-    startDate: "7/11/2014"
+    startDate: "2014-10-16"
     formId: "A3EC"
   coolblue-blauwdruk:
     title: Coolblue Blauwdruk
@@ -120,13 +120,13 @@ courses:
     title: Wervend schrijven
     description: "Bij wervende teksten wil je één reactie niet: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven."
     image: writingcourse.png
-    startDate: "14/11/2014"
+    startDate: "2014-11-14"
     formId: "A3F6"
   interviewing-course:
     title: Training sollicitatiegesprekken voeren
     description: Bij deze workshop leer je hoe je een goed sollicitatiegesprek voert voor beide partijen en de juiste informatie uit het gesprek haalt.
     image: interviewingcourse.png
-    startDate: "21/10/2014"
+    startDate: "2014-10-21"
     formId: "A3EA"
   behind-the-scenes:
     title: Behind The Scenes
@@ -137,17 +137,17 @@ courses:
     title: User Experience Design at Coolblue
     description: On these pages you can find any information you need about the User Experience Design at Coolblue.
     image: uxatcoolblue.png
-    startDate: "7/11/2014"
+    startDate: "2014-11-7"
     formId: "ABC123"
   codecademy:
     title: Codecademy
     description: "Learn to code HTML, CSS, Javascript and PHP"
     image: codecademy.png
-    startDate: "7/11/2014"
+    startDate: "2014-11-7"
     formId: "ABC123"
   codeschool:
     title: Code school
     description: "Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js."
     image: codeschool.png
-    startDate: "7/11/2014"
+    startDate: "2014-11-7"
     formId: "ABC123"
