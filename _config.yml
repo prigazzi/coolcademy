@@ -109,13 +109,15 @@ courses:
     title: Coolblue Introduction
     description: "During this day you learn more about the why, who en how of Coolblue."
     image: coolblueintro.png
+	startDate: 29/07/2014
+	id: ABC123
   coolblue-blauwdruk:
     title: Coolblue Blauwdruk
-    description: "Deze blauwdruk is voor iedereen die werkt met het merk Coolblue. Dat ben jij ook. Dat is niet voorbehouden aan hippe vormgevers of breedsprakige marketeers. Want met elke mail of gesprek, factuur of pakket, wat je ook doet, je draagt bij aan de uitstraling van Coolblue."
+    description: "Voor iedereen die werkt met het merk Coolblue. Dat ben jij ook!"
     image: coolblueblueprint.png
   writing-course:
     title: Wervend schrijven
-    description: "Bij wervende teksten wil je één reactie niet. En dat is: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven. Aan de hand van vele aansprekende voorbeelden, ga je zelf aan de slag met je eigen teksten."
+    description: "Bij wervende teksten wil je één reactie niet: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven."
     image: writingcourse.png
   interviewing-course:
     title: Training sollicitatiegesprekken voeren
@@ -123,11 +125,11 @@ courses:
     image: interviewingcourse.png
   behind-the-scenes:
     title: Behind The Scenes
-    description: This event gives interested developers the opportunity to stop by and have a look behind the scenes of our IT Development department. A great opportunity to hear your colleagues present the ideas behind the development of Coolblue.
+    description: See you colleagues present the ideas behind the development of Coolblue to our mostly technical guests.
     image: behindthescenes.png
   ux-at-coolblue:
     title: User Experience Design at Coolblue
-    description: On these pages you can find any information you need about the User Experience Design at Coolblue
+    description: On these pages you can find any information you need about the User Experience Design at Coolblue.
     image: uxatcoolblue.png
   codecademy:
     title: Codecademy
