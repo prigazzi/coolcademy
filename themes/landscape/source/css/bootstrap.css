@@ -996,7 +996,6 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
 }
 h1 small,
 h2 small,
@@ -4567,10 +4566,6 @@ a.list-group-item.active > .badge,
   .container .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
-  }
-  .jumbotron h1,
-  .jumbotron .h1 {
-    font-size: 63px;
   }
 }
 .thumbnail {

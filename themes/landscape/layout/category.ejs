@@ -8,8 +8,8 @@
 %>
 <div class="container">
 	<div class="category--header row">
-		<div class="jumbotron">
-		  <h1><%= course.title %></h1>
+		<div class="jumbotron category--jumbotron">
+		  <h1 class="category--title"><%= course.title %></h1>
 			<p><%= course.description %></p>
 			<% if (typeof course.startDate !== 'undefined') {%>
 				<p>
