@@ -5,6 +5,22 @@
 
 global-reset()
 
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v11/cJZKeOuBrn4kERxqtaUH3YX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v11/k3k702ZOKiLJc3WVjuplzBVuXpl7XtNjpLlhhhGlVqc.woff2) format('woff2');
+}
+
 input, button
   margin: 0
   padding: 0
@@ -12,22 +28,13 @@ input, button
     border: 0
     padding: 0
 
-@font-face
-  font-family: FontAwesome
-  font-style: normal
-  font-weight: normal
-  src: url(font-icon-path + ".eot?v=#" + font-icon-version)
-  src: url(font-icon-path + ".eot?#iefix&v=#" + font-icon-version) format("embedded-opentype"),
-       url(font-icon-path + ".woff?v=#" + font-icon-version) format("woff"),
-       url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
-       url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
-
 html, body, #container
   height: 100%
 
 body
   background: color-background
-  font: font-size font-sans
+  font-family: "Open Sans"
+  font-size: font-size
   padding-top: header-height
 
 .outer
@@ -56,6 +63,13 @@ body
 
 .coolblue-dot
   color: color-orange
+
+.course-item .language-tag
+  color: color-white
+  background-color: color-blue
+  font-family: font-open-sans
+  font-size: 45px
+  font-weight: bold
 
 #wrap
   height: 100%
