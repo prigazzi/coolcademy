@@ -109,6 +109,8 @@ courses:
     title: Coolblue Introduction
     description: "During this day you learn more about the why, who en how of Coolblue."
     image: coolblueintro.png
+	startDate: 29/07/2014
+	id: ABC123
   coolblue-blauwdruk:
     title: Coolblue Blauwdruk
     description: "Deze blauwdruk is voor iedereen die werkt met het merk Coolblue. Dat ben jij ook. Dat is niet voorbehouden aan hippe vormgevers of breedsprakige marketeers. Want met elke mail of gesprek, factuur of pakket, wat je ook doet, je draagt bij aan de uitstraling van Coolblue."
