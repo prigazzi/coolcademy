@@ -8,18 +8,25 @@
 %>
 <div class="container">
 	<div class="category--header row">
-		<div class="jumbotron category--jumbotron">
-		  <h1 class="category--title"><%= course.title %></h1>
-			<p><%= course.description %></p>
-			<% if (typeof course.startDate !== 'undefined') {%>
+		<div class="col-xs-12">
+		  <h2 class="category--title"><%= course.title %><span class="coolblue-dot">.</span></h2>
+			<div class="col-xs-4 col-md-2">
+				<img class="img-circle img-responsive" src="/images/courses/<%= course.image %>" alt="%= course.title %>">
+			</div>
+			<div class="col-xs-8 col-md-10">
+				<p><%= course.description %></p>
+				<% if (typeof course.startDate !== 'undefined') {%>
 				<p>
 					<a target="_new" class="btn btn-primary btn-lg" role="button"
 					href="https://docs.google.com/a/coolblue.nl/forms/d/1Cn5gP0-3s70O3Ly5i_BzRdhnrS0ISHaGlK51pdVxmnE/viewform?entry.760763918=<%=course.startDate%>&entry.1313137544=<%=course.title%>&entry.1136998327=<%=course.formId%>">Subscribe</a>
 				</p>
 			<% } %>
+			</div>
 		</div>
 	</div>
 	<div class="row">
-		<%- partial('_partial/archive', {pagination: config.category, index: true}) %>
+		<% var lesson = 1 %>
+		<%- partial('_partial/archive', {pagination: config.category, index: true, lesson: lesson}) %>
+		<% lesson++ %>
 	</div>
 </div>
