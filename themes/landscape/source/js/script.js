@@ -106,6 +106,8 @@
     $('.fancybox').fancybox();
   }
 
+  $(".course-item").matchHeight();
+
   // Mobile nav
   var $container = $('#container'),
     isMobileNavAnim = false,
