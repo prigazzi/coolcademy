@@ -107,15 +107,15 @@ deploy:
 courses:
   coolblue-intro:
     title: Coolblue Introduction
-    description: During this day you learn more about the why, who en how of Coolblue.
+    description: "During this day you learn more about the why, who en how of Coolblue."
     image: coolblueintro.png
   coolblue-blauwdruk:
     title: Coolblue Blauwdruk
-    description: Deze blauwdruk is voor iedereen die werkt met het merk Coolblue. Dat ben jij ook. Dat is niet voorbehouden aan hippe vormgevers of breedsprakige marketeers. Want met elke mail of gesprek, factuur of pakket, wat je ook doet, je draagt bij aan de uitstraling van Coolblue.
+    description: "Deze blauwdruk is voor iedereen die werkt met het merk Coolblue. Dat ben jij ook. Dat is niet voorbehouden aan hippe vormgevers of breedsprakige marketeers. Want met elke mail of gesprek, factuur of pakket, wat je ook doet, je draagt bij aan de uitstraling van Coolblue."
     image: coolblueblueprint.png
   writing-course:
     title: Wervend schrijven
-    description: Bij wervende teksten wil je één reactie niet. En dat is: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven. Aan de hand van vele aansprekende voorbeelden, ga je zelf aan de slag met je eigen teksten.
+    description: "Bij wervende teksten wil je één reactie niet. En dat is: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven. Aan de hand van vele aansprekende voorbeelden, ga je zelf aan de slag met je eigen teksten."
     image: writingcourse.png
   interviewing-course:
     title: Training sollicitatiegesprekken voeren
@@ -131,9 +131,9 @@ courses:
     image: uxatcoolblue.png
   codecademy:
     title: Codecademy
-    description: Learn to code HTML, CSS, Javascript and PHP
+    description: "Learn to code HTML, CSS, Javascript and PHP"
     image: codecademy.png
   codeschool:
     title: Code school
-    description: Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js.
+    description: "Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js."
     image: codeschool.png
