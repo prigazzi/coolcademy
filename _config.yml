@@ -139,10 +139,9 @@ courses:
     image: uxatcoolblue.png
     url: "https://sites.google.com/a/coolblue.nl/ux"
   codecademy:
-    title: Codecademy
-    description: "Learn to code HTML, CSS, Javascript and PHP"
+    title: PHP Done Right
+    description: "Some good qualities of PHP we expect to find in our developers."
     image: codecademy.png
-    url: "http://www.codecademy.com/"
   codeschool:
     title: Code school
     description: "Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js."
