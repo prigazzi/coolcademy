@@ -2,7 +2,10 @@
 	{
 		if (key == page.category) 
 		{
-			var course = config.courses[key] %>
+			var course = config.courses[key]
+ 		}
+	}
+%>
 <div class="container">
 	<div class="category--header row">
 		<div class="jumbotron">
@@ -15,6 +18,3 @@
 		<%- partial('_partial/archive', {pagination: config.category, index: true}) %>
 	</div>
 </div>
-<% 		}
-	}
-%>

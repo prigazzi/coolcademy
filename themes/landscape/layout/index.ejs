@@ -2,8 +2,9 @@
 	<div class="row">
 		<div class="col-xs-12 course-list">
 			<h2>Courses<span class="coolblue-dot">.</span></h2>
-			<%	for (var key in config.courses) { 
-				course = config.courses[key]; %>
+			<%	for (var key in config.courses)
+				{ 
+					var course = config.courses[key]; %>
 				<%- partial("_partial/course-item", {slug: key, title: course.title, description: course.description , image: course.image}) %>
 			<% } %>
 		</div>
