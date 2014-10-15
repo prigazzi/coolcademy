@@ -4,6 +4,7 @@
 		if (key == page.category) 
 		{
 			var course = config.courses[key]
+			break
  		}
 	}
 %>
@@ -15,7 +16,7 @@
 				<img class="img-circle img-responsive" src="/images/courses/<%= course.image %>" alt="%= course.title %>">
 			</div>
 			<div class="col-xs-8 col-md-10">
-				<p><%= course.longDescription %></p>
+				<p><%= course.longDescription ? course.longDescription : course.description %></p>
 				<% if (typeof course.startDate !== 'undefined') {
 					var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
 					var firstDate = new Date(course.startDate);
