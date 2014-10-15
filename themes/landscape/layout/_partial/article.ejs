@@ -6,12 +6,12 @@
         <%- partial('post/gallery') %>
         <% if (post.title){ %>
           <header class="">
-            <h4>
+            <h2>
               <% if (typeof lesson != "undefined") { %>
                 Lesson <%=lesson%>: 
               <% } %>
               <%=post.title%>
-            </h4>
+            </h2>
           </header>
         <% } %>
         <% if (!hideContent) { %>
