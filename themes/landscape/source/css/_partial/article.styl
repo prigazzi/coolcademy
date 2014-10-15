@@ -1,5 +1,5 @@
 .article
-  margin: block-margin 0
+  margin: article-padding 0
 
 .article-inner
   @extend $block
@@ -7,7 +7,7 @@
 
 .article-index
   position: fixed !important
-  top: 103px
+  top: 73px
   right: gutter-width
   @media mq-mobile
     display: none
@@ -37,13 +37,12 @@
   margin: 0 12px 1em
 
 .article-header
-  padding: article-padding article-padding 0
+  padding: 0 article-padding
 
 .article-title
   text-decoration: none
-  font-size: 2em
   font-weight: bold
-  color: color-default
+  color: color-darkblue
   line-height: line-height-title
   transition: color 0.2s
   a&:hover
