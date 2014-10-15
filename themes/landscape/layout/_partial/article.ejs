@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="xs-col-12">
+    <div class="col-xs-12 col-sm-9">
       <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
         <div class="article-inner">
           <%- partial('post/gallery') %>
@@ -33,7 +33,13 @@
           <%- partial('post/nav') %>
         <% } %>
       </article>
-
+    </div>
+    <div class="col-xs-12 col-sm-3 well article-index">
+      <%- toc(page.content) %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="xs-col-12">
       <% if (!index && post.comments && config.disqus_shortname){ %>
       <section id="comments">
         <div id="disqus_thread">
