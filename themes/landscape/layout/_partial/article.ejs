@@ -34,6 +34,9 @@
           </footer>
         </div>
       </article>
+      <div id="lastLesson" style="display: none">
+        <a href="/finish-course/?course=<%=post.categories.toArray()[0].name%>">ZOMGF, you finished this course!</a>
+      </div>
     </div>
     <% if (toc(page.content) !== "") { %>
     <div class="col-xs-12 col-sm-3 well article-index">
