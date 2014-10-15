@@ -1,5 +1,5 @@
 title: Hello World
-subtitle: "Hier komt een korte intodructie tekst over de les"
+subtitle: "The general facts about our everyday work"
 date: 2014-10-14 18:21:31
 tags:
 categories:

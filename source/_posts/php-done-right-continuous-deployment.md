@@ -1,5 +1,6 @@
 title: Continuous Deployment
 date: 2014-10-15 13:32:07
+subtitle: "Our long-term objective"
 categories: codecademy
 ---
 In our constant effort to achieve Continuous Deployment, we´re working with several methodologies that allows us to be more agile in our development and deployment.

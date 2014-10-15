@@ -1,6 +1,6 @@
 
 title: Databases
-subtitle: "Hier komt een korte intodructie tekst over de les"
+subtitle: "We have a thing (or two) to say about this."
 date: 2014-10-15 09:26:10
 tags:
 categories:

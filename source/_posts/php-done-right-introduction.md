@@ -1,5 +1,5 @@
 title: Introduction
-subtitle: "Hier komt een korte intodructie tekst over de les"
+subtitle: "Welcome to Coolblue's Development Team"
 date: 2014-10-14 18:19:31
 categories:
     - codecademy
