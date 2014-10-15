@@ -1,6 +1,10 @@
 <div class="container">
   <div class="row">
+  <% if (toc(page.content) !== "") {%>
     <div class="col-xs-12 col-sm-9">
+    <% } else { %>
+    <div class="col-xs-12">
+    <% } %>
       <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
         <div class="article-inner">
           <%- partial('post/gallery') %>
@@ -31,9 +35,11 @@
         </div>
       </article>
     </div>
+    <% if (toc(page.content) !== "") {%>
     <div class="col-xs-12 col-sm-3 well article-index">
       <%- toc(page.content) %>
     </div>
+    <% } %>
   </div>
   <div class="row">
     <div class="xs-col-12">
