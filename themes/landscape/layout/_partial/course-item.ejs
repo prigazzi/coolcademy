@@ -22,7 +22,7 @@ var target = course.url ? "_blank" : "_self"
 					<%- course.description.length > maxlength ? "..." : "" %>
 					</p>
 					<div class="course-item--details">
-						<span class="badge">EN</span>
+						<span class="badge"><%-course.language.toUpperCase()%></span>
 					</div>
 				</div>
 			</div>
