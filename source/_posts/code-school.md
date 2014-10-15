@@ -65,6 +65,7 @@ In case Human Resources have not yet taken a picture of you, please send a passp
 
 You&#39;ll learn the most by doing. So below some tasks for you to complete. It might be a little bit more difficult if you do not speak Dutch. Please try and otherwise ask a Dutch colleague to help out.
 
+##Quiz<span class="coolblue-dot">.</span>
 <script>
 	document.write(
 		generateQuiz(
