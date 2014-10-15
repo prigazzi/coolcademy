@@ -7,4 +7,4 @@ categories: codeschool
 In this video Kristian will explain you how we deal with our development process.
 
 
--- URL
+<iframe width="100%" height="500px" src="//www.youtube.com/embed/ZZAGCkFrOxY" frameborder="0" allowfullscreen></iframe>
