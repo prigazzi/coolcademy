@@ -1,5 +1,6 @@
 <% if (pagination == 2){ %>
-  <% page.posts.each(function(post, index){ %>
+  <% var posts = get_posts({count: 100, order: "asc", query: {categories: page.category}}) %>
+  <% posts.each(function(post, index){ %>
     <%- partial('article', {post: post, index: true, lesson: index + 1, hideContent: hideContent}) %>
   <% }) %>
   <% if (page.total > 1){ %>
