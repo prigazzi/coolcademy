@@ -5,7 +5,7 @@ tags:
 categories:
 - codeschool
 ---
-### The systems of Coolblue 
+### The systems of Coolblue
 At Coolblue we use several systems to support you in your activities. Below you will find short descriptions of our most important systems and their applications. Your user name and password – the one you created yourself upon your first log-in on a PC – are valid for all these systems.
 
 **Vanessa**
@@ -65,18 +65,28 @@ In case Human Resources have not yet taken a picture of you, please send a passp
 
 You&#39;ll learn the most by doing. So below some tasks for you to complete. It might be a little bit more difficult if you do not speak Dutch. Please try and otherwise ask a Dutch colleague to help out.
 
-##Quiz<span class="coolblue-dot">.</span>
+##Test your knowledge<span class="coolblue-dot">.</span>
 <script>
 	document.write(
 		generateQuiz(
 			[
-				{"title":"Did you upload your photo in your Gmail account?","answers":[{"title":"Yes"}, {"title":"No"}, {"title":"Maybe"}]},
-				{"title":"Did you upload your photo in Eigen Baas?","answers":[{"title":"Yes"}, {"title":"No"}, {"title":"Maybe"}]}
+				{"title":"Upload your photo in your Google profile. Did you manage?","answers":
+					[
+						{"title":"Yes", "isAnswer":true, "hint":"Well done! Now it will be easier for your colleagues to recognize you."}, 
+						{"title":"No", "hint":"Please give it another try, maybe you want to ask a colleague to help you."}
+					]
+				},
+				{"title":"Put your photo in Eigen Baas. Did you manage?","answers":
+					[
+						{"title":"Yes", "isAnswer":true, "hint":"Well done! Now it will be easier for your colleagues to recognize you."}, 
+						{"title":"No", "hint":"Please give it another try, maybe you want to ask a colleague to help you."}
+					]
+				}
 			]
-		)
+		, "Test your knowledge")
 	)
 </script>
 
 
-Done? Please click here...
+Done? Please continue with lesson 2.
 
