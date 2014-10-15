@@ -1,12 +1,18 @@
 <tr>
-  <td class="col-xs-3 col-sm-2 course--status">
+  <td class="col-xs-2 course--status">
+    <% if (typeof lesson != "undefined") { %>
+      <div class="img-circle img-responsive course--lesson-number">
+        <span><%=lesson%></span>
+      </div>
+    <% } else { %>
     <img src="/images/tags/LessonMarker_Empty.png" alt="" class="course--status-icon img-circle img-responsive">
+    <% } %>
   </td>
-  <td class="col-xs-8 col-sm-9">
+  <td class="col-xs-9">
     <article id="<%= post.layout %>-<%= post.slug %>" class="article-type-<%= post.layout %>" itemscope itemprop="blogPost">
       <div>
         <% if (post.title){ %>
-          <header class="article-header">
+          <header>
             <h4>
               <% if (typeof lesson != "undefined") { %>
                 Lesson <%=lesson%>: 
