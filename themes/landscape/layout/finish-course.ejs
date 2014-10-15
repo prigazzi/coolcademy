@@ -1,6 +1,10 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
+      <h1 class="finish-course--title">Congratulations<span class="coolblue-dot">.</span></h1>
+      <div class="congratulations">
+        <img class="img-responsive img-unicorn" src="/images/UnicornAnimated.gif" alt="">
+      </div>
 <script>
 var courses = <%- JSON.stringify(config.courses) %>;
 var deparam = function (querystring) {
@@ -18,7 +22,6 @@ var deparam = function (querystring) {
 
 console.log(deparam(location.search));
 </script>
-<img src="" alt="Congratulations">
 		</div>
 	</div>
 </div>
