@@ -6,5 +6,6 @@ categories: codeschool
 
 In this video Kristian will explain you how we deal with our development process.
 
-
-<iframe width="100%" height="500px" src="//www.youtube.com/embed/ZZAGCkFrOxY" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" width="100%" height="500px" src="//www.youtube.com/embed/ZZAGCkFrOxY" allowfullscreen></iframe>
+</div>
