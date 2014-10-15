@@ -1,6 +1,0 @@
-title: This is Codecademy
-date: 2014-10-14 18:19:31
-tags:
-categories:
-	- codecademy
----

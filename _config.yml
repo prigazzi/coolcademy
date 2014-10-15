@@ -108,42 +108,50 @@ courses:
   coolblue-intro:
     title: Coolblue Introduction
     description: "During this day you learn more about the why, who en how of Coolblue."
+    longDescription: ""
     image: "coolblueintro.png"
     startDate: "2014-10-16"
     formId: "A3EC"
   coolblue-blauwdruk:
     title: Coolblue Blauwdruk
     description: "Voor iedereen die werkt met het merk Coolblue. Dat ben jij ook!"
+    longDescription: ""
     image: coolblueblueprint.png
     url: "https://sites.google.com/a/coolblue.nl/blueprint"
   writing-course:
     title: Wervend schrijven
     description: "Bij wervende teksten wil je één reactie niet: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven."
+    longDescription: ""
     image: writingcourse.png
     startDate: "2014-11-14"
     formId: "A3F6"
   interviewing-course:
-    title: Training sollicitatiegesprekken voeren
-    description: Bij deze workshop leer je hoe je een goed sollicitatiegesprek voert voor beide partijen en de juiste informatie uit het gesprek haalt.
+    title: Sollicitatiegesprekken voeren
+    description: "Bij deze workshop leer je hoe je een goed sollicitatiegesprek voert voor beide partijen en de juiste informatie uit het gesprek haalt."
+    longDescription: ""
     image: interviewingcourse.png
     startDate: "2014-10-21"
     formId: "A3EA"
   behind-the-scenes:
     title: Behind The Scenes
-    description: See you colleagues present the ideas behind the development of Coolblue to our mostly technical guests.
+    description: "See you colleagues present the ideas behind the development of Coolblue to our mostly technical guests."
+    longDescription: ""
     image: behindthescenes.png
     url: "http://www.coolblue.nl/behindthescenes"
   ux-at-coolblue:
     title: User Experience Design at Coolblue
-    description: On these pages you can find any information you need about the User Experience Design at Coolblue.
+    description: "On these pages you can find any information you need about the User Experience Design at Coolblue."
+    longDescription: ""
     image: uxatcoolblue.png
     url: "https://sites.google.com/a/coolblue.nl/ux"
   codecademy:
     title: PHP Done Right
     description: "Some good qualities of PHP we expect to find in our developers."
+    longDescription: ""
     image: codecademy.png
   codeschool:
     title: Code school
     description: "Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js."
+    longDescription: ""
     image: codeschool.png
     url: "http://www.codeschool.com/"
