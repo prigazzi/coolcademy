@@ -16,11 +16,23 @@
 .list-group-item:nth-child(2n+1)
 	background-color: color-grey
 
-.course--status
-	height: 120px
+.course--status,
+.course--link
+	vertical-align: middle !important
 
-.course--status-icon
-	position: relative
-	top: 50%
-	margin-top: -25px
-	width: 50px
+.course--status-icon,
+.lesson-item--link
+	max-width: 50px
+
+.lesson-item--link
+	display: block
+	height: 30px
+	width: 20px
+	margin-top: -15px
+	background-image: url(/images/navigation/Navigation_ForwardBlue_Normal.png)
+	background-repeat: no-repeat
+	background-size: contain
+	&:hover
+		background-image: url(/images/navigation/Navigation_ForwardBlue_MouseOver.png)
+	&:visited
+		background-image: url(/images/navigation/Navigaton_ForwardBlue_Pressed.png)
