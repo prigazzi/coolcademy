@@ -29,19 +29,20 @@
   </td>
   <td class="col-xs-1 course--link">
   <% 
-  if (typeof post.lessonType != "undefined") 
+  if (typeof post.lessonType != "undefined")
   {
-  	if (post.lessonType == "physical")
-	{
-	%>
-		<a target="_new" class="btn btn-info" href="https://docs.google.com/a/coolblue.nl/forms/d/11lDJZs8jmXY42MGyFac6jABVxOkMAX2AkPcXF3TzKt4/viewform?entry.581567275=<%- post.startDate %>&entry.731533691=<%- post.title %>" role="button">Sign up</a>
+      if (post.lessonType == "physical")
+      {
+  %>
+    <a target="_new" class="btn btn-info" href="https://docs.google.com/a/coolblue.nl/forms/d/11lDJZs8jmXY42MGyFac6jABVxOkMAX2AkPcXF3TzKt4/viewform?entry.581567275=<%- post.startDate %>&entry.731533691=<%- post.title %>" role="button">Sign up</a>
 	<%
-	}
+      }
   }
   else if (!signup)
   {
+    var lastLessonUrl = lastLesson ? "?lastLesson=true" : ""
   %>
-    <a class="lesson-item--link" href="<%- config.root %><%- post.path %>"></a>
+    <a class="lesson-item--link" href="<%- config.root %><%- post.path %><%=lastLessonUrl%>"></a>
   <%
   }
   %>
