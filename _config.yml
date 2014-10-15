@@ -108,7 +108,7 @@ courses:
   coolblue-intro:
     title: Coolblue Introduction
     description: "During this day you learn more about the why, who en how of Coolblue."
-    longDescription: ""
+    longDescription: "The Coolblue Introduction Day is available in Dutch and English! So if you have new team members please sign them up for this immersive Coolblue experience. New at Coolblue? Then you'll be signed up automatically."
     image: "coolblueintro.png"
     startDate: "2014-10-16"
     formId: "A3EC"
@@ -121,14 +121,14 @@ courses:
   writing-course:
     title: Wervend schrijven
     description: "Bij wervende teksten wil je één reactie niet: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven."
-    longDescription: ""
+    longDescription: "Bij wervende teksten wil je één reactie niet. En dat is: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven. Aan de hand van vele aansprekende voorbeelden, ga je zelf aan de slag met je eigen teksten. Voorbereiding: neem 2 stukken wervende tekst mee die je wilt verbeteren."
     image: writingcourse.png
     startDate: "2014-11-14"
     formId: "A3F6"
   interviewing-course:
     title: Sollicitatiegesprekken voeren
     description: "Bij deze workshop leer je hoe je een goed sollicitatiegesprek voert voor beide partijen en de juiste informatie uit het gesprek haalt."
-    longDescription: ""
+    longDescription: "Leer om effectief te communiceren, relevante vragen te stellen en je sollicitatiegesprek te structureren. Dit doe je in een rollenspel met een heuse trainingsacteur. Solliciteer naar een plek!"
     image: interviewingcourse.png
     startDate: "2014-10-21"
     formId: "A3EA"
@@ -147,11 +147,10 @@ courses:
   codecademy:
     title: PHP Done Right
     description: "Some good qualities of PHP we expect to find in our developers."
-    longDescription: ""
+    longDescription: "Some good qualities of PHP we expect to find in our developers."
     image: codecademy.png
   codeschool:
-    title: Code school
-    description: "Learn the fundamentals of HTML, CSS and Javascript or follow the iOS path, GIT and Angular.js."
-    longDescription: ""
+    title: Start for new joiners IT Dev
+    description: "All you need to know on your first day working for Coolblue in the IT Development team."
+    longDescription: "Congratulations! You managed somehow to get a computer, an account and a password. In this course you'll learn some basics you need when starting to work for IT Development."
     image: codeschool.png
-    url: "http://www.codeschool.com/"
