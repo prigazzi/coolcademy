@@ -10,3 +10,34 @@ For this lesson we ask you to read the start page of the Wiki and after that the
 You can find the DevWiki here:
 
 https://sites.google.com/a/coolblue.nl/it-wiki/home
+
+##Test your knowledge<span class="coolblue-dot">.</span>
+<script>
+	document.write(
+		generateQuiz(
+			[
+				{"title":"What Configuration Management System do we use to manage our servers?","answers":
+					[
+						{"title":"Puppet","hint":"Exactly! That is the right answer. We use Puppet for this.","isAnswer":true}, 
+						{"title":"Teamcity", "hint":"Not exacty, we use Teamcity as a solution for continuous deployment"}, 
+						{"title":"Delphi", "hint":"No, Delphi is the language in which Vanessa is written."}
+					]
+				},
+				{"title":"Who/where is the security officer of Coolblue?","answers":
+					[
+						{"title":"Pieter Zwart", "hint":"No! He is the Eindbaas, or CEO in English"}, 
+						{"title":"IT Services", "hint":"No, but they can probably help you finding him"}, 
+						{"title":"Anthonie van Dijk", "hint":"Yes, Anthonie is the one to ask if you have security questions", "isAnswer": true}
+					]
+				},
+				{"title":"What do we use for the version control of our software?","answers":
+					[
+						{"title":"Subversion", "hint":"No, we use that only for documentation nowadays but now we have another solution for software, try again."}, 
+						{"title":"Github", "hint":"Yes, that is the system to use!", "isAnswer": true}, 
+						{"title":"CVS", "hint":"No, Maybe it is better if you read this part of the Wiki again.."}
+					]
+				}
+			]
+		)
+	)
+</script>

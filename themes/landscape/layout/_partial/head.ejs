@@ -38,38 +38,65 @@
   <%- partial('google-analytics') %>
   <script>
 		
-	function generateQuiz(questions)
+	function generateQuiz(questions, title)
 	{
 		result = "";
 
-    if (questions.length) {
+		if (questions.length) 
+		{
 
-      result += "<div class=\"quiz\">";
+		  result += "<div class=\"quiz\">";
 
-      for (i=0; i != questions.length; ++i)
-      {
-        var question = questions[i];
+			for (i=0; i != questions.length; ++i)
+			{
+				var question = questions[i];
 
-        result += "<h3 class=\"panel-title\">"+(i+1)+". "+ question.title +"</h3>";
+				result += "<h3 class=\"panel-title\">"+(i+1)+". "+ question.title +"</h3>";
 
-        for (j=0; j != question.answers.length; ++j)
-        {
-          var answer = question.answers[j];
-          if (answer.isAnswer)
-          {
-            result += "<div style=\"padding:3px\"><input style=\"margin-right:5px\" type=\"radio\" name=\""+i+"\">"+answer.title+"</input></div>";
-          }
-          else
-          {
-            result += "<div style=\"padding:3px\"><input style=\"margin-right:5px\" type=\"radio\" name=\""+i+"\">"+answer.title+"</input></div>";
-          }
-        }
-      }
+				for (j=0; j != question.answers.length; ++j)
+				{
+					 var answer = question.answers[j];
+					 if (answer.isAnswer)
+					 {
+						var CLASS = "alert alert-success" 
+						var role="alert";
+					 }
+					 else
+					 {
+						CLASS = "alert alert-danger";
+						role="alert";
+					 }
+					 
+					result += "<div style=\"padding:3px\"><label><input onClick=\"showAnswer('answer_"+i+"', '"+answer.hint+"', '"+CLASS+"', '"+role+"')\" style=\"margin-right:5px\" type=\"radio\" name=\""+i+"\">"+answer.title+"</label></div>";
+				}
+				
+				result += "<div id=\"answer_"+i+"\" style=\"margin-top:10px\"></div>";
+			}
 
-      result += "</div>"
+			result += "</div>"
 		}
 		return result;
 	}
-  
+
+  var deparam = function (querystring) {
+    // remove any preceding url and split
+    querystring = querystring.substring(querystring.indexOf('?')+1).split('&');
+    var params = {}, pair, d = decodeURIComponent;
+    // march and parse
+    for (var i = querystring.length - 1; i >= 0; i--) {
+      pair = querystring[i].split('=');
+      params[d(pair[0])] = d(pair[1]);
+    }
+
+    return params;
+  };//--  fn  deparam
+	
+	function showAnswer(id, string, CLASS, role)
+	{
+		document.getElementById(id).innerHTML = string;
+		document.getElementById(id).className = CLASS;
+		document.getElementById(id).role = role;
+	}
+	
   </script>
 </head>
