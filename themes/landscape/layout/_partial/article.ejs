@@ -35,14 +35,18 @@
         </div>
       </article>
     </div>
-    <% if (toc(page.content) !== "") {%>
+    <% if (toc(page.content) !== "") { %>
     <div class="col-xs-12 col-sm-3 well article-index">
       <%- toc(page.content) %>
     </div>
     <% } %>
   </div>
   <div class="row">
-    <div class="col-xs-12">
+    <% if (toc(page.content) !== "") { %>
+      <div class="col-xs-12 col-sm-9">
+    <% } else { %>
+      <div class="col-xs-12">
+    <% } %>
       <% if (!index && post.comments && config.disqus_shortname){ %>
       <section id="comments">
         <div id="disqus_thread">
