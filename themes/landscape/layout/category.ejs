@@ -30,7 +30,7 @@
 			<div class="panel panel-default category--panel">
 				<ul class="list-group">
 					<% var lesson = 1 %>
-					<%- partial('_partial/archive', {pagination: config.category, index: true, lesson: lesson}) %>
+					<%- partial('_partial/archive', {pagination: config.category, index: true, lesson: lesson, hideContent: true}) %>
 					<% lesson++ %>
 				</ul>
 			</div>
