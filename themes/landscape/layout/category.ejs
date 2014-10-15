@@ -15,7 +15,7 @@
 				<img class="img-circle img-responsive" src="/images/courses/<%= course.image %>" alt="%= course.title %>">
 			</div>
 			<div class="col-xs-8 col-md-10">
-				<p><%= course.description %></p>
+				<p><%= course.longDescription %></p>
 				<% if (typeof course.startDate !== 'undefined') {
 					var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
 					var firstDate = new Date(course.startDate);
