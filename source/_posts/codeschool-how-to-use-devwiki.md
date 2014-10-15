@@ -10,3 +10,14 @@ For this lesson we ask you to read the start page of the Wiki and after that the
 You can find the DevWiki here:
 
 https://sites.google.com/a/coolblue.nl/it-wiki/home
+
+<script>
+	document.write(
+		generateQuiz(
+			[
+				{"title":"What Configuration Management System do we use to manage our servers?","answers":[{"title":"Yes","hint":"this is the hint","isAnswer":""}, {"title":"No"}, {"title":"Maybe"}]},
+				{"title":"Did you upload your photo in Eigen Baas?","answers":[{"title":"Yes"}, {"title":"No"}, {"title":"Maybe"}]}
+			]
+		)
+	)
+</script>
