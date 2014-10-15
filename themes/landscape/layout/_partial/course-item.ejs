@@ -1,21 +1,25 @@
+<% 
+var url = course.url ? course.url : "/"+config.category_dir+"/"+key+"/" 
+var target = course.url ? "_blank" : "_self"
+%>
 <div class="col-xs-12 col-sm-4 col-md-3">
 	<div class="course-item">
 		<div class="row">
 			<div class="col-xs-4 col-sm-12">
-				<a href="/<%=config.category_dir%>/<%=slug%>/" class="course-item--link" title="Meer informatie over <%=title%>">
-					<img src="/images/courses/<%=image%>" alt="<%=title%>" class="img-circle img-responsive">
+				<a href="<%=url%>" class="course-item--link" title="Meer informatie over <%=course.title%>" target="<%=target%>">
+					<img src="/images/courses/<%=course.image%>" alt="<%=course.title%>" class="img-circle img-responsive">
 				</a>
 			</div>
 			<div class="col-xs-8 col-sm-12">
 				<h3 class="course-item--title">
-					<a href="/<%=config.category_dir%>/<%=slug%>/"><%=title%></a>
+					<a href="<%=url%>" target="<%=target%>"><%=course.title%></a>
 				</h3>
 				<div class="course-item--description">
 					<p>
 					<% var maxlength = theme.description_length;
-						var max = description.length > maxlength ? maxlength : description.length %>
-					<%- description.substr(0, max) %>
-					<%- description.length > maxlength ? "..." : "" %>
+						var max = course.description.length > maxlength ? maxlength : course.description.length %>
+					<%- course.description.substr(0, max) %>
+					<%- course.description.length > maxlength ? "..." : "" %>
 					</p>
 					<div class="course-item--details">
 						<span class="badge">EN</span>

@@ -5,7 +5,7 @@
 			<%	for (var key in config.courses)
 				{ 
 					var course = config.courses[key]; %>
-				<%- partial("_partial/course-item", {slug: key, title: course.title, description: course.description , image: course.image}) %>
+				<%- partial("_partial/course-item", {key: key, course: course}) %>
 			<% } %>
 		</div>
 	</div>
