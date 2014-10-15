@@ -65,9 +65,16 @@ In case Human Resources have not yet taken a picture of you, please send a passp
 
 You&#39;ll learn the most by doing. So below some tasks for you to complete. It might be a little bit more difficult if you do not speak Dutch. Please try and otherwise ask a Dutch colleague to help out.
 
-
-1) Add your picture to your Gmail Profile.
-2) Add your Picture to Eigen Baas and fill in our credentials.
+<script>
+	document.write(
+		generateQuiz(
+			[
+				{"title":"Did you upload your photo in your Gmail account?","answers":[{"title":"Yes"}, {"title":"No"}, {"title":"Maybe"}]},
+				{"title":"Did you upload your photo in Eigen Baas?","answers":[{"title":"Yes"}, {"title":"No"}, {"title":"Maybe"}]}
+			]
+		)
+	)
+</script>
 
 
 Done? Please click here...

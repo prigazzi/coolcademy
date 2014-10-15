@@ -18,6 +18,7 @@
   } else if (is_tag()){
     title = 'Tag: ' + page.tag;
   }
+
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -35,4 +36,30 @@
   <%- css('css/custom-style') %>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google-analytics') %>
+  <script>
+		
+	function generateQuiz(questions)
+	{
+		result = "";
+		for (i=0; i != questions.length; ++i)
+		{
+			var question = questions[i];
+			result += "<div style=\"margin-top:15px; margin-bottom:5px\">"+(i+1)+". "+ question.title +"</div>";
+			for (j=0; j != question.answers.length; ++j)
+			{
+				var answer = question.answers[j];
+				if (answer.isAnswer)
+				{
+					result += "<div style=\"padding:3px\"><input style=\"margin-right:5px\" type=\"radio\" name=\""+i+"\">"+answer.title+"</input></div>";
+				}
+				else
+				{
+					result += "<div style=\"padding:3px\"><input style=\"margin-right:5px\" type=\"radio\" name=\""+i+"\">"+answer.title+"</input></div>";
+				}
+			}
+		}
+		return result;
+	}
+  
+  </script>
 </head>
