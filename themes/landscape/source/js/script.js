@@ -137,3 +137,39 @@
     $container.removeClass('mobile-nav-on');
   });
 })(jQuery);
+
+$(document).ready(function(){
+  hash = window.location.hash;
+  offset = $(hash).offset();
+
+  $(".toc-link").each(function(){
+    var link = $(this);
+
+    if (hash)
+    {
+      if (link.attr("href") === hash)
+      {
+       var target = this.hash,
+        $target = $(target);
+
+        $('html, body').scrollTop($target.offset().top - 63);
+        link.addClass("active");
+      }
+    }
+
+    link.on('click', function(event){
+      event.preventDefault;
+      $(".toc-link").removeClass("active");
+      link.addClass("active");
+
+       var target = this.hash,
+        $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 63
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+  });
+});
