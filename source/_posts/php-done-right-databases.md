@@ -4,7 +4,7 @@ tags:
 categories:
     - codecademy
 ---
-## One Databse to rule them all...
+## One Database to rule them all...
 
 In Coolblue we have a master Oracle Database, that runs all our processes. It´s being used mostly in Vanessa and all the new C# applications we´re creating every day. 
 
