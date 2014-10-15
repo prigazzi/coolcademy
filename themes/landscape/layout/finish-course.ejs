@@ -1,13 +1,18 @@
+<script>
+  var qs = deparam(location.search);
+</script>
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12">
       <h1 class="finish-course--title">Congratulations<span class="coolblue-dot">.</span></h1>
-      <div class="congratulations">
+        <h2>You finished the <script>document.write(courses[qs.course].title);</script> course.</h2>
+        <h3>You deserve to share this acomplishment with the rest of the world.</h3>
+        <div class="congratulations">
         <img class="img-responsive img-unicorn" src="/images/UnicornAnimated.gif" alt="">
       </div>
       <div class="col-xs-12 col-sm-6 col-sm-offset-3 share">
         <h3>Sharing is caring</h3>
-        <a href="https://plus.google.com/share?url={URL}" onclick="javascript:window.open(this.href,
+        <a class="sharing" href="https://plus.google.com/share?url=" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
   src="https://www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/></a>
       </div>
