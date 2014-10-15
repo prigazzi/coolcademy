@@ -10,7 +10,9 @@
         <%- partial('post/gallery') %>
         <% if (post.link || post.title){ %>
           <header class="">
+            <% if (typeof lesson != "undefined") { %>
             <h3>Lesson <%=lesson%></h3>
+            <% } %>
             <%- partial('post/title', {class_name: 'article-title'}) %>
           </header>
         <% } %>
