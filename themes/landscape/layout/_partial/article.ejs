@@ -1,19 +1,17 @@
-<li class="list-group-item">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-2">
-    <img src="" alt="" class="course--status img-rounded img-responsive">
-  </div>
-  <div class="col-xs-10">
+<div class="container">
+<div class="row">
+  <div class="col-xs-12">
     <article id="<%= post.layout %>-<%= post.slug %>" class="article-type-<%= post.layout %>" itemscope itemprop="blogPost">
       <div class="">
         <%- partial('post/gallery') %>
-        <% if (post.link || post.title){ %>
+        <% if (post.title){ %>
           <header class="">
-            <% if (typeof lesson != "undefined") { %>
-            <h3>Lesson <%=lesson%>: <%=post.title%></h3>
-            <% } %>
-            <%- partial('post/title', {class_name: 'article-title'}) %>
+            <h4>
+              <% if (typeof lesson != "undefined") { %>
+                Lesson <%=lesson%>: 
+              <% } %>
+              <%=post.title%>
+            </h4>
           </header>
         <% } %>
         <% if (!hideContent) { %>
@@ -43,14 +41,13 @@
       <% } %>
     </article>
   </div>
-    </div>
-  </div>
+</div>
+</div>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
+<div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 </section>
 <% } %>
-</li>

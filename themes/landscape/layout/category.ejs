@@ -3,7 +3,10 @@
 	{
 		if (key == page.category) 
 		{
-			var course = config.courses[key] %>
+			var course = config.courses[key]
+ 		}
+	}
+%>
 <div class="container">
 	<div class="category--header row">
 		<div class="col-xs-12">
@@ -32,15 +35,12 @@
 		<div class="col-xs-12">
 			<h3>Contents</h3>
 			<div class="panel panel-default category--panel">
-				<ul class="list-group">
+				<table class="table table-striped">
 					<% var lesson = 1 %>
 					<%- partial('_partial/archive', {pagination: config.category, index: true, lesson: lesson, hideContent: true}) %>
 					<% lesson++ %>
-				</ul>
+				</table>
 			</div>
 		</div>
 	</div>
 </div>
-<% 		}
-	}
-%>
