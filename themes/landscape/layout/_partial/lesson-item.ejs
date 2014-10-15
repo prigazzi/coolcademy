@@ -14,7 +14,7 @@
         <% if (post.title){ %>
           <header>
             <h4>
-              <% if (typeof lesson != "undefined") { %>
+              <% if (typeof lesson != "undefined" && !signup) { %>
                 Lesson <%=lesson%>: 
               <% } %>
               <%=post.title%>

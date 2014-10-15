@@ -101,7 +101,12 @@ stylus:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: rsync
+  host: coolcademy.devneed.com
+  user: coolcademy
+  port: 22
+  verbose: true
+  root: /home/coolcademy/coolcademy.devneed.com
 
 # Courses Information
 courses:
@@ -119,7 +124,7 @@ courses:
     longDescription: ""
     image: blauwedag.png
     url: "https://sites.google.com/a/coolblue.nl/blueprint"
-    language: nl	
+    language: nl
   writing-course:
     title: Wervend schrijven
     description: "Bij wervende teksten wil je één reactie niet: meh. Tijdens deze workshop leer je daarom de basis van wervend schrijven."
@@ -127,7 +132,7 @@ courses:
     image: writingcourse.png
     startDate: "2014-11-14"
     formId: "A3F6"
-    language: nl	
+    language: nl
   interviewing-course:
     title: Sollicitatie gesprekken voeren
     description: "Bij deze workshop leer je hoe je een goed sollicitatiegesprek voert voor beide partijen en de juiste informatie uit het gesprek haalt."
@@ -135,30 +140,30 @@ courses:
     image: interviewingcourse.png
     startDate: "2014-10-21"
     formId: "A3EA"
-    language: nl	
+    language: nl
   behind-the-scenes:
     title: Behind The Scenes
     description: "See you colleagues present the ideas behind the development of Coolblue to our mostly technical guests."
     longDescription: ""
     image: behindthescenes.png
     url: "http://www.coolblue.nl/behindthescenes"
-    language: en	
+    language: en
   ux-at-coolblue:
     title: User Experience Design at Coolblue
     description: "On these pages you can find any information you need about the User Experience Design at Coolblue."
     longDescription: ""
     image: uxatcoolblue.png
     url: "https://sites.google.com/a/coolblue.nl/ux"
-    language: en	
+    language: en
   codecademy:
     title: PHP Done Right
     description: "Some good qualities of PHP we expect to find in our developers."
     longDescription: "Some good qualities of PHP we expect to find in our developers."
     image: codecademy.png
-    language: en	
+    language: en
   codeschool:
     title: Start for new joiners IT Dev
     description: "All you need to know on your first day working for Coolblue in the IT Development team."
     longDescription: "Congratulations! You managed somehow to get a computer, an account and a password. In this course you'll learn some basics you need when starting to work for IT Development."
     image: codeschool.png
-    language: en	
+    language: en
