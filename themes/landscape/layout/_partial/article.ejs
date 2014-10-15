@@ -11,7 +11,7 @@
         <% if (post.link || post.title){ %>
           <header class="">
             <% if (typeof lesson != "undefined") { %>
-            <h3>Lesson <%=lesson%></h3>
+            <h3>Lesson <%=lesson%>: <%=post.title%></h3>
             <% } %>
             <%- partial('post/title', {class_name: 'article-title'}) %>
           </header>
