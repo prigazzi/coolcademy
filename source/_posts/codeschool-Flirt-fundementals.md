@@ -1,5 +1,5 @@
 title: Flirt fundamentals
-subtitle: In this course Pablo will explain you the fundamentals of the Flirt system.
+subtitle: Flirt is a system to manage content. In this lesson you'll find out more about it.
 date: 2014-10-15 14:53:13
 categories: codeschool
 lessonType: physical

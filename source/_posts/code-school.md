@@ -39,7 +39,7 @@ Feeling a bit overwhelmed by all the new impressions already, and you need to as
 
 ### Data storage locations
 There are several locations for data storage within Coolblue. You can choose from the following locations:
-**Drive: To store here or not to store here (Also: why?)**
+Drive: Most commonly used storage for documents, spreadsheets etc. You can choose here with whom you want to share your work per document.
 C: Only available on the PC you are working on, this drive is not backed up. This is the drive where the files on your desktop are stored.
 U: This “drive” is located on our network and is your personal drive there. We do make back-ups of this drive.
 S: This “drive” is on our network as well, but you share this one with your department. We make back-ups of this drive, too.
