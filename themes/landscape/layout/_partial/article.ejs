@@ -26,17 +26,12 @@
             <% } %>
           </div>
           <footer class="article-footer">
-            <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-            <% if (post.comments && config.disqus_shortname){ %>
-              <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-            <% } %>
-            <%- partial('post/tag') %>
+              <div id="lastLesson" style="display: none">
+                <a class="btn btn-success btn-lg right" href="/finish-course/?course=<%=post.categories.toArray()[0].name%>">ZOMGF, you finished this course! &raquo;</a>
+              </div>
           </footer>
         </div>
       </article>
-      <div id="lastLesson" style="display: none">
-        <a href="/finish-course/?course=<%=post.categories.toArray()[0].name%>">ZOMGF, you finished this course!</a>
-      </div>
     </div>
     <% if (toc(page.content) !== "") { %>
     <div class="col-xs-12 col-sm-3 well article-index">

@@ -31,7 +31,9 @@
 
         var sharing = $(".sharing");
         sharing.attr("href", sharing.attr("href") + location.href);
-        document.title = "Finished " + courses[querystring.course].title;
+        if (courses[querystring.course]) {
+          document.title = "Finished " + courses[querystring.course].title;
+        }
   });
 </script>
 <%- js('js/script') %>
