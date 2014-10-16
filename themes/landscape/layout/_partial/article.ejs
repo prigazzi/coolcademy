@@ -6,10 +6,10 @@ page.categories.each(function(category) {
   <div class="row">
   <% if (toc(page.content) !== "") {%>
     <div class="col-xs-12 col-sm-9">
-      <a href="<%= config.root %><%=category_path%>" class="back-to-course">&laquo; Back to course overview</a>
     <% } else { %>
     <div class="col-xs-12">
     <% } %>
+       <a href="<%= config.root %><%=category_path%>" class="back-to-course">&laquo; Back to course overview</a>
       <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
         <div class="article-inner">
           <%- partial('post/gallery') %>
