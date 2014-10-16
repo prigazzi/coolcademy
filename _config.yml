@@ -115,7 +115,7 @@ courses:
     description: "During this day you learn more about the why, who en how of Coolblue."
     longDescription: "The Coolblue Introduction Day is available in Dutch and English! So if you have new team members please sign them up for this immersive Coolblue experience. New at Coolblue? Then you'll be signed up automatically."
     image: "coolblueintro.png"
-    startDate: "2014-10-16"
+    startDate: "2014-10-31"
     formId: "A3EC"
     language: en
   coolblue-blauwdruk:
