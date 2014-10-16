@@ -8,6 +8,12 @@ var target = course.url ? "_blank" : "_self"
 			<div class="col-xs-4 col-sm-12">
 				<a href="<%=url%>" class="course-item--link" title="Meer informatie over <%=course.title%>" target="<%=target%>">
 					<img src="/images/courses/<%=course.image%>" alt="<%=course.title%>" class="img-circle img-responsive">
+					<% if (course.language === "en") {
+						imageSource = "Badge_EnglishCourse.png"
+					} else {
+						imageSource = "Badge_DutchCourse.png"
+					}%>
+					<img src="/images/tags/<%=imageSource%>" alt="" class="language-badge">
 				</a>
 			</div>
 			<div class="col-xs-8 col-sm-12">
@@ -21,9 +27,6 @@ var target = course.url ? "_blank" : "_self"
 					<%- course.description.substr(0, max) %>
 					<%- course.description.length > maxlength ? "..." : "" %>
 					</p>
-					<div class="course-item--details">
-						<span class="badge"><%-course.language.toUpperCase()%></span>
-					</div>
 				</div>
 			</div>
 		</div>
