@@ -104,8 +104,8 @@ deploy:
   type: rsync
   host: coolcademy.devneed.com
   user: coolcademy
-  port: 22
   verbose: true
+  delete: true
   root: /home/coolcademy/coolcademy.devneed.com
 
 # Courses Information
