@@ -20,5 +20,20 @@
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
 <% } %>
+<script>
+  $(function()
+  {
+        var querystring = deparam(location.search);
+        if (typeof querystring.lastLesson != "undefined")
+    {
+      var link = $("#lastLesson").css("display", "block");
+    }
 
+        var sharing = $(".sharing");
+        sharing.attr("href", sharing.attr("href") + location.href);
+        if (courses[querystring.course]) {
+          document.title = "Finished " + courses[querystring.course].title;
+        }
+  });
+</script>
 <%- js('js/script') %>

@@ -1,3 +1,7 @@
+<% category_path = ""
+page.categories.each(function(category) {
+  category_path = category.path
+})%>
 <div class="container">
   <div class="row">
   <% if (toc(page.content) !== "") {%>
@@ -5,6 +9,7 @@
     <% } else { %>
     <div class="col-xs-12">
     <% } %>
+       <a href="<%= config.root %><%=category_path%>" class="back-to-course">&laquo; Back to course overview</a>
       <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
         <div class="article-inner">
           <%- partial('post/gallery') %>
@@ -26,11 +31,9 @@
             <% } %>
           </div>
           <footer class="article-footer">
-            <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
-            <% if (post.comments && config.disqus_shortname){ %>
-              <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
-            <% } %>
-            <%- partial('post/tag') %>
+              <div id="lastLesson" style="display: none">
+                <a class="btn btn-success btn-lg right" href="/finish-course/?course=<%=post.categories.toArray()[0].name%>">ZOMGF, you finished this course! &raquo;</a>
+              </div>
           </footer>
         </div>
       </article>
