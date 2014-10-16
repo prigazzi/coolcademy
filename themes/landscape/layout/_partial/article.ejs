@@ -37,6 +37,7 @@ page.categories.each(function(category) {
           </footer>
         </div>
       </article>
+      <iframe id="forum_embed2" src="https://groups.google.com/forum/embed/?place=forum/coolcademy#!forum/coolcademy-<%=post.categories.toArray()[0].name%>" scrolling="no" frameborder="0" width="100%" height="700"></iframe>
     </div>
     <% if (toc(page.content) !== "") { %>
     <div class="col-xs-12 col-sm-3 well article-index">
@@ -44,7 +45,6 @@ page.categories.each(function(category) {
     </div>
     <% } %>
   </div>
-  <iframe id="forum_embed2" src="https://groups.google.com/forum/embed/?place=forum/coolcademy#!forum/coolcademy-<%=post.categories.toArray()[0].name%>" scrolling="no" frameborder="0" width="100%" height="700"></iframe>
   <div class="row">
     <% if (toc(page.content) !== "") { %>
       <div class="col-xs-12 col-sm-9">
