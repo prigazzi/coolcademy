@@ -1,4 +1,4 @@
-coolcademy
+hexo-online-academy
 ==========
 
-Repository for Coolblue Hackathon 2014
+Repository for Hackathon 2014
